@@ -75,9 +75,9 @@ function find(value, array) {
     return true;
   } else
     return false;
-  for (let i = find(value);
-    find(array) === find(value)
+
 }
+
 
 console.log(find(8, [7, 8, 9, 10]))
 console.log(find(8, [4, 5, 6, 3]))
