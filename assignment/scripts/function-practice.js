@@ -22,7 +22,7 @@ function helloName(name) {
 
 
 // Remember to call the function to test
-console.log(helloName('Orion'));
+console.log('Promblem #2 ', helloName('Orion'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -31,7 +31,7 @@ function addNumbers(firstNumber, secondNumber) {
 
 }
 addNumbers(20, 8);
-console.log(addNumbers(23, 5))
+console.log('Promblem #3 ', addNumbers(23, 5))
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3) {
@@ -39,7 +39,7 @@ function multiplyThree(num1, num2, num3) {
   return result;
 }
 multiplyThree(5, 4, 3);
-console.log(multiplyThree(7, 8, 4))
+console.log('Promblem #4 ', multiplyThree(7, 8, 4))
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive(number) {
@@ -52,8 +52,8 @@ function isPositive(number) {
 // Write a separate console.log statement for each outcome
 isPositive(6);
 isPositive(-9);
-console.log(isPositive(8))
-console.log(isPositive(-5))
+console.log('Promblem #5.1 (Positive Number)', isPositive(8))
+console.log('Promblem #5.2 (Negative number)', isPositive(-5))
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
@@ -63,25 +63,26 @@ function getLast(array) {
   } else
     return array.pop();
 }
-console.log(getLast([]))
-
+console.log('Promblem #6.1 (Nothing in array) ', getLast([]))
+console.log('Promblem #6.2 (Last number in array)', getLast([7, 8, 9]))
 
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find(value, array) {
-  if (array.length === value) {
-    return true;
-  } else
-    return false;
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false;
 }
 
-
-console.log(find(8, [7, 8, 9, 10]))
-console.log(find(8, [4, 5, 6, 3]))
-
+console.log('Problem #7.1 (Should be true)', find(8, [7, 8, 9, 10]));
+console.log('Problem #7.2 (Should be false)', find(8, [4, 5, 6, 3]));
+console.log('Problem #7.3 (Should be false)', find(90, [4, 5, 6, 3]));
+console.log('Problem #7.4 (Should be true)', find(300, [1123, 516, 690, 300]));
 
 
 // ----------------------
